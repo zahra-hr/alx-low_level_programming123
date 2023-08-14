@@ -9,14 +9,15 @@ int main(void)
 {
 	int a = 0;
 
-	putchar('0' + a);
-	a++;
 	while (a < 10)
 	{
+		putchar('0' + a);
+		if (a == 9)
+			break;
 		putchar(',');
 		putchar(' ');
-		putchar('0' + a);
 		a++;
 	}
+	putchar('$');
 	return (0);
 }
