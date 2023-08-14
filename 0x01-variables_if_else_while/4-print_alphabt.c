@@ -14,8 +14,8 @@ int main(void)
 	{
 		if (l == 'e' || l == 'q')
 		{
-			continue;
 			l++;
+			continue;
 		}
 		else
 		{
