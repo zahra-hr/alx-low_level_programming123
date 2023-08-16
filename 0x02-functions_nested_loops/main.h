@@ -2,5 +2,5 @@
 #define MAIN_H
 #include <stdio.h>
 
-int _putchar(char a);
+int _putchar(char);
 #endif

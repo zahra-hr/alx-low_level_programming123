@@ -1,12 +1,20 @@
-#include <stdio.h>
 #include "main.h"
 /**
- * Description: A C program to print putchar
+ * main - Entry point
+ * Description: A C program to print _putchar
  * Return: 0 (succes)
 */
 
-int _putchar(char c)
+int main(void)
 {
-	putchar(c);
+	char wrd[] = "_putchar";
+	int i = 0;
+
+	while (wrd[i] != '\0')
+	{
+		_putchar(wrd[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
