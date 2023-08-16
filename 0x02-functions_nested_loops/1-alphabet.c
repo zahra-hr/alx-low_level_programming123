@@ -6,9 +6,12 @@
 
 void print_alphabet(void)
 {
-	for (int i = 97; i <= 122 ; i++)
+	int i = 97;
+
+	while (i <= 122)
 	{
 		_putchar('0' + i);
+		i++;
 	}
 	_putchar('\n');
 }
