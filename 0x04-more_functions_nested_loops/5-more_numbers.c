@@ -20,7 +20,10 @@ void more_numbers(void)
 			_putchar('0' + j);
 			j++;
 		}
-		_putchar('\n');
-		i++;
+		if (i != 9)
+		{
+			_putchar('\n');
+			i++;
+		}
 	}
 }
