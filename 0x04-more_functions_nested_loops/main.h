@@ -13,5 +13,4 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
-unsigned long long int prime_factor(unsigned long long int n);
 #endif

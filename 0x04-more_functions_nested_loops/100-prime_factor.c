@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "prime_factor.c"
 
 /**
  * main - utilizes prime_factor to calculate big number
