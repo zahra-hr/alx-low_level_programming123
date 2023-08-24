@@ -14,7 +14,7 @@ void reverse_array(int *a, int n)
 	for (i = n - 1; i >= 0; i--)
 	{
 		j = a[i];
-		while (j != 0)
+		while (j > 0)
 		{
 			_putchar('0' + (j % 10));
 			j /= 10;
