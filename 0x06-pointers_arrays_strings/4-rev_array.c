@@ -9,26 +9,14 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-	int j;
+	int j = 0;
+	int t;
 
-	for (i = n - 1; i >= 0; i--)
+	for (i = n - 1; i > j; i--)
 	{
-		j = a[i];
-		if (j == 0)
-			_putchar('0' + 0);
-		else
-		{
-			while (j > 0)
-			{
-				_putchar('0' + (j % 10));
-				j /= 10;
-			}
-			if (i > 0)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
+		t = a[i];
+		a[i] = a[j];
+		a[j] = t;
+		j++;
 	}
-	_putchar('\n');
 }
