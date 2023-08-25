@@ -35,7 +35,7 @@ char *rot13(char *str)
 	char a4[] = "nopqrstuvwxyz";
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (p[i] != '\0')
 	{
 		p[i] = flip(a1, a2, p[i]);
 		p[i] = flip(a2, a1, p[i]);
