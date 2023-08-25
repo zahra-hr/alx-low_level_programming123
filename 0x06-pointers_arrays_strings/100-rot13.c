@@ -8,7 +8,7 @@
  * Return: character
 */
 
-char flip(char *alpha1, char *alpha2, s)
+char flip(char *alpha1, char *alpha2, char s)
 {
 	int i = 0;
 
@@ -28,20 +28,19 @@ char flip(char *alpha1, char *alpha2, s)
 
 char *rot13(char *str)
 {
-	char *p = str;
 	char a1[] = "ABCDEFGHIJKLM";
 	char a2[] = "NOPQRSTUVWXYZ";
 	char a3[] = "abcdefghijklm";
 	char a4[] = "nopqrstuvwxyz";
 	int i = 0;
 
-	while (p[i] != '\0')
+	while (str[i] != '\0')
 	{
-		p[i] = flip(a1, a2, p[i]);
-		p[i] = flip(a2, a1, p[i]);
-		p[i] = flip(a3, a4, p[i]);
-		p[i] = flip(a4, a3, p[i]);
+		str[i] = flip(a1, a2, p[i]);
+		str[i] = flip(a2, a1, p[i]);
+		str[i] = flip(a3, a4, p[i]);
+		str[i] = flip(a4, a3, p[i]);
 		i++;
 	}
-	return (p);
+	return (str);
 }
