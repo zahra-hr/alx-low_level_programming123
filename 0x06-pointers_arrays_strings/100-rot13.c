@@ -15,7 +15,7 @@ char flip(char *alpha1, char *alpha2, s)
 	while (alpha1[i] != '\0')
 	{
 		if (s == alpha1[i])
-			s = alpha2[i];
+			return (alpha2[i]);
 		i++;
 	}
 	return (s);
@@ -37,10 +37,10 @@ char *rot13(char *str)
 
 	while (str[i] != '\0')
 	{
-		flip(a1, a2, p[i]);
-		flip(a2, a1, p[i]);
-		flip(a3, a4, p[i]);
-		flip(a4, a3, p[i]);
+		p[i] = flip(a1, a2, p[i]);
+		p[i] = flip(a2, a1, p[i]);
+		p[i] = flip(a3, a4, p[i]);
+		p[i] = flip(a4, a3, p[i]);
 		i++;
 	}
 	return (p);
