@@ -2,6 +2,7 @@
 /**
  * is_prime_number -  function that returns 1 if the input is prime
  * @n: parameter
+ * @o: parameter
  * Return: prime number
 */
 
