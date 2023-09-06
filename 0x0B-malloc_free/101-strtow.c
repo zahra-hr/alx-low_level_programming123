@@ -29,7 +29,7 @@ int cntw(char *str)
 char **strtow(char *str)
 {
 	int m = 0, cw = 0, i, j, k, l;
-	chat **wr;
+	char **wr;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
