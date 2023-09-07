@@ -26,10 +26,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
-	n = malloc(sizeof(int) * nmemb);
+	n = malloc(size * nmemb);
 	if (n == 0)
 		return (NULL);
-	_mem(n, 0, sizeof(int) * nmemb);
+	_mem(n, 0, size * nmemb);
 
 	return (n);
 }
