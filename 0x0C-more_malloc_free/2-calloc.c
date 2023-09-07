@@ -30,5 +30,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (n == 0)
 		return (NULL);
 	_mem(n, 0, sizeof(int) * nmemb);
+
 	return (n);
 }
